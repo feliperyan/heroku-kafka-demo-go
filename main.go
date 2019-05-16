@@ -118,6 +118,7 @@ func (kc *KafkaClient) consumeMessages() {
 		select {
 		case message := <-kc.consumer.Messages():
 			kc.saveMessage(message)
+			log.Println("Received: ", message)
 		}
 	}
 }
