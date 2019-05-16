@@ -1,1 +1,1 @@
-web: heroku-kafka-demo-go
+web: bin/heroku-kafka-demo
